@@ -5,13 +5,15 @@ import Page from "./Page";
 
 function App() {
   return (
-      <div className={'main-page'}>
-          <BrowserRouter>
-              <Routes>
-                  <Route path='/' element={<HomePage/>} />
-                  <Route path='/page/:name' element={<Page/>} />
-              </Routes>
-          </BrowserRouter>
+      <div className={'container'}>
+
+             <BrowserRouter>
+                 <Routes>
+                     <Route path='/' element={<HomePage/>} />
+                     <Route path='/page/:name' element={<Page/>} />
+                 </Routes>
+             </BrowserRouter>
+
       </div>
   );
 }

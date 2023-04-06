@@ -5,35 +5,132 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container{
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
 }
-.main-page{
+.row{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  margin: 0 -15px;
 }
-.home{
+.col-6{
+  padding: 0 15px ;
+  width: 50%;
+}
+.col-4{
+  padding: 0 15px;
+  width: 33.33%;
+}
+.box{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  padding: 15px;
-  width: 30.33%;
+  align-items: center;
   gap: 20px;
-  background-color: darkgray;
+  margin: 10px;
+  position: relative;
+}
+.box1{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.box2{
+  margin-top: 55px;
 }
 img{
-width: 300px;
+width: 100%;
+border-radius: 30px;
+object-fit: contain;
 }
 a{
   text-decoration: none;
-  color: black;
+  color: #fff;
+
+}
+
+.btn{
+  padding: 10px;
+  background-color: crimson;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.home-btn{
+  padding: 10px;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.uniq{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+  width: 100%;
+}
+.wr-img{
+  display: flex;
+  flex-direction: column;
+}
+.title-h{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  background:   linear-gradient(222.26deg, rgba(0, 0, 0, 0.71) 1.22%, rgba(0, 0, 0, 0) 106.28%);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.title-h h4 {
+  color: #d2d0d0;
+}
+
+.wr-h3{
+  position: absolute;
+  margin-top: 55px;
+  height: 91.7%;
+}
+.name{
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.Ingredient{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+ul{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.img-ingredient{
+  width: 100px;
+}
+.wr-ingredient{
+  display: flex;
 }
